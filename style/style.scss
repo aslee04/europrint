@@ -1,0 +1,474 @@
+//================================fonts======================
+@font-face {
+  font-family: 'Lato-Black';
+  src: url("../fonts/Lato-Black.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-BlackItalic';
+  src: url("../fonts/Lato-BlackItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url("../fonts/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-BoldItalic';
+  src: url("../fonts/Lato-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Light';
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-LightItalic';
+  src: url("../fonts/Lato-LightItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url("../fonts/Lato-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-ThinItalic';
+  src: url("../fonts/Lato-ThinItalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-Regular';
+  src: url("../fonts/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: 'Lato-RegularItalic';
+  src: url("../fonts/Lato-RegularItalic.ttf") format("truetype");
+}
+//================================fonts======================
+
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size: 20px;}
+.fs-24{font-size: 24px;}
+.fs-44{font-size: 44px;}
+.fs-46{font-size: 46px;}
+.fs-50{font-size: 50px;}
+
+$LatoBlack: "Lato-Black";
+$LatoBold: "Lato-Bold", "sans-serif";
+$LatoRegular: "Lato-Regular", "sans-serif";
+$LatoLight: "Lato-Light", "sans-serif";
+$textDark: #131A22;
+$textLight: #37475A;
+$textWhite: #FFFDF6;
+
+body {
+  header {
+    .bg-white {
+      .container {
+        nav {
+          a {
+            img {}
+          }
+          button {}
+
+          .collapse {
+            ul {
+              li {
+                .nav-item {
+                  .nav-link {
+                    color: $textDark;
+                    font-family: $LatoRegular;
+                    line-height: 19px;
+                    border-bottom: 1px solid #fff;
+                    &:hover {
+                      border-bottom: 1px solid #F26522;
+                      transition: .7s;
+                    }
+                  }
+                }
+              }
+            }
+
+
+            .btnGroupHeader {
+              .btn-group {
+                .btn {
+                  font-family: $LatoRegular;
+                  color: $textDark;
+                  line-height: 19px;
+                  border: 1px solid rgba(19, 26, 34, 0.21);
+                  box-sizing: border-box;
+                  border-radius: 100px;
+                }
+
+                .dropdown-menu {
+                  .dropdown-item {}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    .section-1 {
+      .container {
+        .row {
+          .content1 {
+            padding-top: 154px;
+
+            .card {
+              .card-body {
+                .text-card {
+                  font-family: $LatoLight;
+                  color: $textDark;
+                  line-height: 53px;
+                }
+                .bold{
+                  font-family: $LatoBlack;
+                }
+              }
+
+              .card-footer {
+                button {
+                  background-color: #F26522;
+                  border-radius: 100px;
+                  font-family: $LatoLight;
+                  line-height: 24px;
+                  &:hover {
+                    opacity: .9;
+                  }
+                }
+              }
+            }
+          }
+
+          .content2 {
+            .headerCarousel {
+              display: flex;
+              position: relative;
+
+              ul{
+                li{
+                  border-radius: 50%;
+                  width: 8px;
+                  height: 8px;
+                  background-color: $textDark;
+                }
+              }
+
+              .carousel-inner{
+                div {
+                  &:nth-child(1) {
+                    padding-top: 40px;
+                  }
+
+                  &:nth-child(2) {
+                    padding-top: 40px;
+                  }
+
+                  &:nth-child(3) {
+                    padding-top: 40px;
+                  }
+                }
+              }
+            }
+          }
+
+          .content3 {
+            padding-top: 8%;
+            ul {
+              li {
+                img {
+                  transform: translateX(-20px);
+                }
+
+                span {
+                  font-family: $LatoRegular;
+                  color: $textDark;
+                }
+                p{
+                  font-family: $LatoBlack;
+                  font-size: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    background-color: #131A22;
+
+    .container {
+      .footerContent1 {
+        .col-md-3 {
+          ul {
+            li {
+              &:nth-child(1) {
+                font-family: $LatoBold;
+                color: $textWhite;
+                line-height: 22px;
+              }
+
+              font-family: $LatoLight;
+              color: $textWhite;
+              line-height: 17px;
+            }
+          }
+        }
+        .col-md-3 {
+          ul {
+            li {
+              &:nth-child(1) {
+                font-family: $LatoBold;
+                color: $textWhite;
+                line-height: 22px;
+              }
+
+              font-family: $LatoLight;
+              color: $textWhite;
+              line-height: 17px;
+            }
+          }
+        }
+        .col-md-3 {
+          ul {
+            li {
+              &:nth-child(1) {
+                font-family: $LatoBold;
+                color: $textWhite;
+                line-height: 22px;
+              }
+
+              font-family: $LatoLight;
+              color: $textWhite;
+              line-height: 17px;
+            }
+          }
+        }
+        .col-md-3 {
+          ul {
+            li {
+              &:nth-child(1) {
+                font-family: $LatoBold;
+                color: $textWhite;
+                line-height: 22px;
+              }
+              &:nth-child(2) {
+                img {
+                  transform: translateX(-20px);
+                }
+              }
+              p {
+                font-family: $LatoBold;
+                font-size: 30px;
+                color: $textWhite;
+                line-height: 30px;
+              }
+              span {
+                font-family: $LatoRegular;
+                color: $textWhite;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+
+      .footerContent2 {
+        .col-md-2 {
+          .btnGroupFooter {
+            .btn-group {
+              .btn {
+                font-family: $LatoRegular;
+                line-height: 22px;
+                border: 1px solid #e1dfd9;
+                box-sizing: border-box;
+                border-radius: 100px;
+                color: $textWhite;
+                opacity: .5;
+              }
+
+              .dropdown-menu {
+                .dropdown-item {}
+              }
+            }
+          }
+        }
+        .col-md-4 {
+          ul{}
+        }
+        .col-md-6 {
+          .justify-content-end {
+            .footerAdress {
+              img {
+                transform: translateX(-50px);
+              }
+              p {
+                font-family: $LatoRegular;
+                color: $textWhite;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+      }
+
+      .footerContent3 {
+        .col-md-12 {
+          p {
+            font-family: $LatoRegular;
+            color: $textWhite;
+            line-height: 17px;
+            opacity: .5;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    header {
+      ul {
+        li {
+          .nav-item {
+            .nav-link {
+              color: $textDark;
+              font-family: $LatoRegular;
+              font-size: 14px;
+              line-height: 19px;
+              border-bottom: 1px solid #fff;
+              &:hover {
+                border-bottom: 1px solid #F26522;
+                transition: .7s;
+              }
+            }
+          }
+        }
+      }
+
+      .btnGroupHeader {
+        .btn-group {
+          .btn {
+            font-family: $LatoRegular;
+            font-size: 14px;
+            color: $textDark;
+            line-height: 19px;
+            border: 1px solid rgba(19, 26, 34, 0.21);
+            box-sizing: border-box;
+            border-radius: 100px;
+          }
+        }
+      }
+    }
+
+    main {
+      .content1{
+        .card {
+          .card-body {
+            .text-card {
+              font-family: $LatoLight;
+              font-size: 30px;
+              color: $textDark;
+              line-height: 28px !important;
+            }
+            .bold{
+              font-family: $LatoBlack;
+            }
+          }
+
+          .card-footer {
+            button {
+              background-color: #F26522;
+              border-radius: 100px;
+              font-family: $LatoLight;
+              font-size: 14px;
+              line-height: 24px;
+              &:hover {
+                opacity: .9;
+              }
+            }
+          }
+        }
+      }
+      .content3{
+        span {
+          font-family: $LatoRegular;
+          color: $textDark;
+          font-size: 12px;
+        }
+        p{
+          font-family: $LatoBlack;
+          font-size: 28px !important;
+        }
+      }
+    }
+
+    footer {
+      .footerContent1{
+        .col-md-3 {
+          ul {
+            li {
+              &:nth-child(1) {
+                font-family: $LatoBold;
+                color: $textWhite;
+                line-height: 22px;
+              }
+              &:nth-child(2) {
+                img {
+                  transform: translateX(-20px);
+                }
+              }
+              p {
+                font-family: $LatoBold;
+                font-size: 18px !important;
+                color: $textWhite;
+                line-height: 30px;
+              }
+              span {
+                font-family: $LatoRegular;
+                color: $textWhite;
+                line-height: 30px;
+              }
+            }
+          }
+        }
+      }
+      .footerContent2{
+        .col-md-2{
+          .btn {
+            font-family: $LatoRegular;
+            font-size: 16px;
+            line-height: 22px;
+            border: 1px solid #e1dfd9;
+            box-sizing: border-box;
+            border-radius: 100px;
+            color: $textWhite;
+            opacity: .5;
+          }
+        }
+        .col-md-6 {
+          padding-left: 25%;
+          .justify-content-end {
+            .footerAdress {
+              img {
+                transform: translateX(-70px) !important;
+              }
+              p {
+                font-family: $LatoRegular;
+                font-size: 10px;
+                color: $textWhite;
+                line-height: 17px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
